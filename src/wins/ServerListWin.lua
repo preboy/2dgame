@@ -41,7 +41,7 @@ end
 
 function ServerListWin:get_player_list(pseudo)
 
-    local url = string.format("http://118.24.48.149:8400/plr_list?pseudo=%s", pseudo)
+    local url = string.format("http://115.159.6.66:8400/plr_list?pseudo=%s", pseudo)
     local xhr = cc.XMLHttpRequest:new()
 
     xhr.responseType = cc.XMLHTTPREQUEST_RESPONSE_STRING
@@ -67,7 +67,7 @@ function ServerListWin:get_server_list()
     local scene = display.getRunningScene()
     scene:SetLoginStatus("拉取服务器列表...")
 
-    local url = "http://118.24.48.149:8400/svr_list"
+    local url = "http://115.159.6.66:8400/svr_list"
     local xhr = cc.XMLHttpRequest:new()
 
     xhr.responseType = cc.XMLHTTPREQUEST_RESPONSE_STRING

@@ -49,7 +49,7 @@ function LoginWin:login(acct, pass)
     local scene = display.getRunningScene()
     scene:SetLoginStatus("登录SDK中...")
 
-    local url = "http://118.24.48.149:8100/acct/login"
+    local url = "http://115.159.6.66:8100/acct/login"
     local xhr = cc.XMLHttpRequest:new()
 
     xhr.responseType = cc.XMLHTTPREQUEST_RESPONSE_STRING
@@ -72,6 +72,7 @@ function LoginWin:login(acct, pass)
 
     local args = string.format("acct=%s&passwd=%s", acct, pass)
     xhr:send(args)
+
 end
 
 -------------------------------------------------------------------------------

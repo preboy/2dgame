@@ -35,7 +35,7 @@ __G__TRACKBACK__ = function(msg)
     -- report stack error to server
     do
         local key = string.format("%s-%s", RuntimeData.svr, RuntimeData.pid)
-        local url = "http://118.24.48.149:8500/stack"
+        local url = "http://115.159.6.66:8500/stack"
         local xhr = cc.XMLHttpRequest:new()
 
         xhr.responseType = cc.XMLHTTPREQUEST_RESPONSE_STRING
